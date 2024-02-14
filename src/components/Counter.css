@@ -1,0 +1,29 @@
+#Counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 20rem; */
+}
+
+#Counter p {
+    margin: 0.25rem 0;
+}
+
+#Counter h2 {
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+img {
+    width: 10rem;
+}
+
+#Counter button {
+    border: 0;
+    background-color: transparent;
+    border-radius: 5rem;
+}
+
+button:active {
+    background-color: rgb(227, 227, 227);
+}
