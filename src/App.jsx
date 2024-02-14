@@ -2,6 +2,7 @@ import './App.css'
 import Counter from './components/Counter'
 import Header from './components/Header'
 import UpgradesCard from './components/UpgradeCard'
+import Footer from './components/Footer'
 import { Upgrades } from './components/Upgrades'
 
 function App() {
@@ -11,7 +12,6 @@ function App() {
       <Header />
       <Counter />
       <div id="UpgradesSection">
-        <h1>Upgrades</h1>
         <div id="upgradeGrid">
           <div className="upgrades">
             <h3>Upgrade</h3>
@@ -24,6 +24,7 @@ function App() {
           )))}
         </div>
       </div>
+      <Footer />
     </>
   )
 }

@@ -1,0 +1,16 @@
+#UpgradesSection {
+    /* max-width: 40rem; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#upgradeGrid {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    justify-items: center;
+    min-width: 40rem;
+    border-radius: 1rem;
+}

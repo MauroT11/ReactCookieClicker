@@ -4,9 +4,9 @@ header {
     max-width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: rgb(194, 56, 194);
+    background-color: rgba(194, 56, 194, 0.723);
     color: white;
     padding: 1rem 0;
     margin-bottom: 1rem;
-    border-bottom: 3px solid gainsboro;
+    border-bottom: 5px solid gainsboro;
 }

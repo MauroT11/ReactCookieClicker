@@ -1,21 +1,3 @@
-#UpgradesSection {
-    /* max-width: 40rem; */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#upgradeGrid {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    /* grid-template-columns: repeat(4, 1fr); */
-    /* padding: 0.5rem 0.5rem; */
-    border: 3px solid black;
-    justify-items: center;
-    /* gap: 1rem; */
-    border-radius: 1rem;
-}
 
 .upgrades {
     display: grid;
@@ -28,6 +10,11 @@
     border-bottom: 3px solid black;
     align-items: center;
     gap: 2rem;
+}
+
+.upgrades:first-child {
+    background-color: rgba(194, 56, 194, 0.723);
+    /* border-radius: 0.5rem; */
 }
 
 .upgrades:last-child {

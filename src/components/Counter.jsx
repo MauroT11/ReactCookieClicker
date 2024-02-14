@@ -21,7 +21,6 @@ export default function Counter() {
 
     return (
         <div id="Counter">
-            <p>Cookies</p>
             <h2>{count}</h2>
             <button onClick={addCookie}>
                 <img src="https://famouscookies.com/wp-content/uploads/2020/11/Famous-Cookie-Cocolate-Chip-21-1600x1600-1.png" alt="cookie Button" />

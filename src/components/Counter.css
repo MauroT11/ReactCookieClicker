@@ -24,6 +24,6 @@ img {
     border-radius: 5rem;
 }
 
-button:active {
-    background-color: rgb(227, 227, 227);
+#Counter button:active {
+    background-color: rgb(232, 232, 232);
 }
