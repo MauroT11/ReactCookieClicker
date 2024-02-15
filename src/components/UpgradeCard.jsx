@@ -5,9 +5,12 @@ export default function UpgradesCard({name, cost, cookiesPS, setCount, count, pe
 
     function handleUpgrade() {
         if (count >= cost) {
-            let upgrade = JSON.parse(perS)
+
+            // INCREASES COOKIES PER SECOND AND DEDUCTS FROM COOKIE COUNT
             setTimeout(() => {
-                setPerS((upgrade) => upgrade + cookiesPS) 
+                // Take
+                setCount((count) => count - cost)
+                setPerS((perS) => perS + cookiesPS) 
             }, 10)
             
             

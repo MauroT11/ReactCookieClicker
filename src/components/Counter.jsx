@@ -12,10 +12,10 @@ export default function Counter({count, setCount, perS}) {
             }, 1000)
             
         localStorage.setItem("Cookies", count.toString()); 
-        // localStorage.setItem("cookiesPerSecond", cookiesPerSecond.toString());
+        localStorage.setItem("cookiesPerSecond", perS.toString());
 
         return () => (clearInterval(interval))
-    }, [count])
+    }, [count, perS])
     // }, [cookies, cookiesPerSecond])
 
     function addCookie() {

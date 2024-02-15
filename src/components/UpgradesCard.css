@@ -15,6 +15,8 @@
 .upgrades:first-child {
     background-color: rgba(194, 56, 194, 0.723);
     /* border-radius: 0.5rem; */
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
 }
 
 .upgrades:last-child {
