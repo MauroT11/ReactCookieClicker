@@ -1,10 +1,15 @@
 import "./ResetButton.css"
 
-export default function ResetButton({resetCount}) {
+export default function ResetButton({resetCount, resetPerS}) {
+
+    function resetLocal() {
+        resetCount(0)
+        resetPerS(1)
+    }
 
     return (
         <>
-            <button onClick={() => resetCount(0)} id="resetBtn">Reset</button>
+            <button onClick={resetLocal} id="resetBtn">Reset</button>
         </>
     )
 }

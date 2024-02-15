@@ -1,18 +1,16 @@
 import "./UpgradesCard.css";
 import { useEffect } from "react";
 
-export default function UpgradesCard({name, cost, cookiesPS, setCount, count, setOwn, own}) {
+export default function UpgradesCard({name, cost, cookiesPS, setCount, count, perS, setPerS}) {
 
     function handleUpgrade() {
-        if (count > cost) {
-            let upgrade = JSON.parse(count)
-            // let bought = JSON.parse(own)
-            // setOwn = bought + 1
-            // console.log(bought)
-            setInterval(() => {
-                setCount((upgrade) => upgrade + cookiesPS)
-                // console.log(up)
-            }, 1000);
+        if (count >= cost) {
+            let upgrade = JSON.parse(perS)
+            setTimeout(() => {
+                setPerS((upgrade) => upgrade + cookiesPS) 
+            }, 10)
+            
+            
         } else {
             alert(`You dont have enough cookies to buy ${name}.`)
         } 

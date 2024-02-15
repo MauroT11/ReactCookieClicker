@@ -10,17 +10,8 @@ import { Upgrades } from './components/Upgrades'
 function App() {
 
   const [count, setCount] = useState(0)
-  // const [own, setOwn] = useState(0)
-
-  function setLocalStorage() {
-    // Store cookies and cookiesPerSecond to local storage
-    useEffect(() => {
-      // local storage supports strings so we convert it to a string before saving it
-      localStorage.setItem("cookies", cookies.toString()); 
-      localStorage.setItem("cookiesPerSecond", cookiesPerSecond.toString());
-    }, [cookies, cookiesPerSecond]);
-  }
-  
+  const [perS, setPerS] = useState(1)
+  // const [own, setOwn] = useState(0)  
 
   function getCookies() {
     // parseInt converts the string from local storage to a number
@@ -32,8 +23,8 @@ function App() {
   
   return (
     <>
-      <Header setCount={setCount}/>
-      <Counter count={count} setCount={setCount} />
+      <Header setCount={setCount} setPerS={setPerS} />
+      <Counter count={count} setCount={setCount} perS={perS} />
       <div id="UpgradesSection">
         <div id="upgradeGrid">
           <div className="upgrades">
@@ -51,7 +42,9 @@ function App() {
             cookiesPS={upgrade.cookiePS} 
             value={upgrade.cookiePS} 
             setCount={setCount} 
-            count={count} 
+            count={count}
+            perS={perS} 
+            setPerS={setPerS}
             // setOwnown={setOwn}
             // own={own}
             />
