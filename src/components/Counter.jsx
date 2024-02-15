@@ -7,9 +7,13 @@ export default function Counter({count, setCount}) {
         let interval = setInterval(() => {
                 setCount((count) => count + 1)
             }, 1000)
+            
+        localStorage.setItem("Cookies", count.toString()); 
+        // localStorage.setItem("cookiesPerSecond", cookiesPerSecond.toString());
 
-            return () => clearInterval(interval)
-    }, [])
+        return () => (clearInterval(interval))
+    }, [count])
+    // }, [cookies, cookiesPerSecond])
 
     function addCookie() {
         setCount(count + 1)
