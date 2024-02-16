@@ -8,12 +8,9 @@ export default function UpgradesCard({name, cost, cookiesPS, setCount, count, pe
 
             // INCREASES COOKIES PER SECOND AND DEDUCTS FROM COOKIE COUNT
             setTimeout(() => {
-                // Take
                 setCount((count) => count - cost)
                 setPerS((perS) => perS + cookiesPS) 
-            }, 10)
-            
-            
+            }, 1)            
         } else {
             alert(`You dont have enough cookies to buy ${name}.`)
         } 

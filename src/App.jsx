@@ -11,19 +11,22 @@ function App() {
 
   const [count, setCount] = useState(0)
   const [perS, setPerS] = useState(1)
-  // const [own, setOwn] = useState(0)  
 
-  function getCookies() {
-    // parseInt converts the string from local storage to a number
-    const [cookies, setCookies] = useState(parseInt(localStorage.getItem("cookies")) || 0);
-    const [cookiesPerSecond, setCookiesPerSecond] = useState(parseInt(localStorage.getItem("cookiesPerSecond")) || 1);
+  // parseInt converts the string from local storage to a number
+  const [cookies, setCookies] = useState(parseInt(localStorage.getItem("Cookies")) || 0);
+  const [cookiesPerSecond, setCookiesPerSecond] = useState(parseInt(localStorage.getItem("cookiesPerSecond")) || 1);
 
-  }
-
+  useEffect(() => {
+    
+    // GETS COOKIES AND COOKIES PER SECOND FROM LOCAL STORAGE
+    setCount((localCount) => localCount = cookies)
+    setPerS((localPerS) => localPerS = cookiesPerSecond)
+    
+  }, [])
   
   return (
     <>
-      <Header setCount={setCount} setPerS={setPerS} />
+      <Header setCount={setCount} setPerS={setPerS}  />
       <Counter count={count} setCount={setCount} perS={perS} />
       <div id="UpgradesSection">
         <div id="upgradeGrid">
@@ -31,7 +34,6 @@ function App() {
             <h3>Upgrade</h3>
             <h3>Cost</h3>
             <h3>Cookie/s</h3>
-            {/* <h3>Bought</h3> */}
             <h3>Buy</h3>
           </div>
           {Upgrades.map((upgrade => (
@@ -45,8 +47,6 @@ function App() {
             count={count}
             perS={perS} 
             setPerS={setPerS}
-            // setOwnown={setOwn}
-            // own={own}
             />
           )))}
         </div>
