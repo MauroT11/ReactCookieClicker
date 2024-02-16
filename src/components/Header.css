@@ -4,7 +4,36 @@ header {
     justify-content: space-evenly;
     background-color: rgba(194, 56, 194, 0.723);
     color: white;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     margin-bottom: 1rem;
     border-bottom: 5px solid gainsboro;
+    align-items: center;
+}
+
+header img {
+    width: 3rem;
+}
+
+header a:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 2560px) {
+    header {
+        font-size: 3rem;
+    }
+
+    header img {
+        width: 6rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    header {
+        font-size: 0.9rem;
+    }
+
+    header img {
+        width: 2.5rem;
+    }
 }

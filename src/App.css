@@ -14,3 +14,15 @@
     min-width: 40rem;
     border-radius: 1rem;
 }
+
+@media only screen and (min-width: 2560px) {
+    #upgradeGrid {
+        border: 5px solid black;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    #upgradeGrid {
+        border: 3px solid black;
+    }
+}

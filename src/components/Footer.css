@@ -11,3 +11,15 @@ footer {
     padding: 0.5rem 0;
     border-top: 5px solid gainsboro;
 }
+
+@media only screen and (min-width: 2560px) {
+    footer {
+        font-size: 3rem;
+    } 
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    footer {
+        font-size: 1rem;
+    }
+}
